@@ -1,4 +1,4 @@
-# DocAI Ret
+# Vision to Speech
 
 This project is designed to process video frames and generate descriptions using a vision model. It extracts frames at specific intervals, resizes them, and prompts the model to describe what it sees.
 
