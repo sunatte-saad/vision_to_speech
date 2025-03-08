@@ -6,6 +6,7 @@ This project is designed to process video frames and generate descriptions using
 - [Installation](#installation)
 - [Creating and Activating a Virtual Environment](#creating-and-activating-a-virtual-environment)
 - [Installing Requirements](#installing-requirements)
+- [Downloading Model Weights](#downloading-model-weights)
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -17,8 +18,8 @@ This project is designed to process video frames and generate descriptions using
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/docai_ret.git
-cd docai_ret
+git clone https://github.com/sunatte-saad/vision_to_speech.git
+cd vision_to_speech
 ```
 
 ---
@@ -41,10 +42,29 @@ source venv/bin/activate
 
 ## Installing Requirements
 
+Before installing the requirements, make sure to install the `moondream` package:
+```bash
+pip install moondream==0.0.5
+```
+
 Make sure your virtual environment is activated, then run:
 ```bash
 pip install -r requirements.txt
 ```
+
+---
+
+## Downloading Model Weights
+
+Download the model weights from the [Moondream GitHub repository](https://github.com/vikhyat/moondream) and place them in the following directory:
+
+```
+vision_model
+```
+
+Ensure that the downloaded files include:
+- `moondream-0_5b-int8.mf`  
+- `moondream-2b-int8.mf` (if applicable)
 
 ---
 
@@ -69,7 +89,7 @@ PROMPT = "what do you see?"
 
 Run the main script with:
 ```bash
-python main.py
+python video_input.py
 ```
 
 ---
